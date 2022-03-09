@@ -28,10 +28,14 @@ plt.title('Zaawansowanie przygotowania prefabrykatów')
 my_yticks = ['ML-404X', 'ML-204X', 'ML-308X', 'ML-203X']
 plt.yticks(y, my_yticks)
 
+plt.ylim(ymin=0)
+
 # legenda
 plt.legend()
 
+# linie siatki
 plt.grid(color = 'k', linewidth = 0.05)
+plt.set_xticks(minor_ticks, minor=True)
 
 plt.tight_layout()
 
